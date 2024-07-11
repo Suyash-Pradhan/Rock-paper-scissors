@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/output.css" rel="stylesheet">
+ 
+</head>
+
+<body>
+  <div class="bg-gray-600 h-full "  >
+
+    <!-- <h1 class=" ">
+      <input class="user bg-slate-500 m-4" type="text" placeholder="enter your input">
+      <input class="cp bg-red-500 m-4" type="text" placeholder="enter your input">
+    <button class="btn">submit</button>
+  </h1>
+  <script src="logic.js"></script>
+  <div class="result m-4 "></div>
+  <div class="result2 m-4"></div> -->
+  
+  <div class="box bg-white  md:w-[50%] m-auto flex flex-col justify-center items-center ">
+    
+    <div class="hand flex items-center  flex-col">
+      <div class="Rhand my-4">
+        <img id="RandomImage" class=" w-64 h-64 object-contain rotate-180 fade" src="assests/rock.png" alt="">
+      </div>
+      <div class="M-text font-bold text-7xl text-center my-28">
+        <h2>LET'S PLAY!</h2>
+      </div>
+      <div class="optionText bg-red-400 mb-14 text-xl">PICK AN OPTION:</div>
+      <div class="options  flex flex-row justify-between w-full h-full align-baseline items-end px-10 py-5 relative top-0">
+        <div class="bg-purple-800 w-20 h-20 rounded-full flex justify-center items-center hover:scale-110 transition duration-300 hover:cursor-pointer"onclick="gertuser('rock')">
+          
+          <img class="w-auto h-20 relative bottom-4 left-2" src="assests/rock.png" alt="">
+        </div>
+        <div class="bg-purple-800 w-20 h-20 rounded-full flex justify-center items-center hover:scale-110 transition duration-300 hover:cursor-pointer" onclick="gertuser('paper')">
+          
+          <img class="w-auto h-24 relative bottom-5 left-1" src="assests/Papel.png" alt="">
+        </div>
+        <div class="bg-purple-800 w-20 h-20 rounded-full flex justify-center items-center hover:scale-110 transition duration-300 hover:cursor-pointer" onclick="gertuser('scissors')"  >
+          
+          <img  class="w-auto h-24 relative bottom-5 left-1  " src="assests/secior.png" alt="">
+        </div>
+      </div>
+    </div>
+    
+    <div class="resultPage hidden flex-col">
+      <div class=" flex items-center flex-col " >
+        <img id="computerChoice" class=" md:h-40 md:w-11   h-64 w-auto rotate-180" src="assests/rock.png" alt="">
+      </div>
+      <h1 id="resText" class="font-bold text-5xl text-center my-6">You Won!</h1>
+      <h1 class="font-bold text-xl text-center my-6  bg-blue-500 rounded-md py-3 text-white hover: cursor-pointer hover:bg-blue-600 hover:scale-105 transition duration-300" onclick="restart()" >PLAY AGAIN</h1>
+      <div class=" flex items-center flex-col ">
+        <img id="userChoice" class="h-64 w-auto " src="assests/rock.png" alt="">
+      </div>
+    </div>
+    
+  </div>
+</div>
+  <script src="logic.js"></script>
+  
+</body>
+
+
+</html>
